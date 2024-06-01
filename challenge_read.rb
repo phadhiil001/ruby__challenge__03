@@ -1,6 +1,7 @@
 require_relative 'ar.rb'
 
 # READING DB ROWS WITH ACTIVE RECORD
+puts Product.inspect
 
 # We can call .count on the Product class to count all the rows.
 # This will generate the following SQL:
@@ -11,6 +12,7 @@ number_of_products = Product.count
 puts "There are #{number_of_products} in the products table."
 
 # To record all the columns that exist in the products table
+
 all_products = Product.all
 
 
