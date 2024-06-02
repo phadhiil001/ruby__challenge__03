@@ -6,8 +6,8 @@ load 'ar.rb'
 new_product = Product.new
 
 # Setting the required properties.
-new_product.name = "Taro",
-new_product.description = "12 - 4 oz jar",
+new_product.name = "Taro"
+new_product.description = "12 - 4 oz jar"
 new_product.price = 12.23
 new_product.stock_quantity = 5
 
