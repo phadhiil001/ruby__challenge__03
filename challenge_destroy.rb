@@ -4,12 +4,12 @@ load 'ar.rb'
 
 # Either step one or step two
 
-# taro = Product.where(:name => 'taro').first
+taro = Product.where(:name => 'taro').first
 
-# puts taro.inspect
-# taro.destroy unless taro.nil?
+puts taro.inspect
+taro.destroy unless taro.nil?
 
-# puts taro.inspect
+puts taro.inspect
 
 # STEP TWO
 product_to_delete = Product.find_by(name: '["Taro", "12 - 40 oz jar", 12.23]')
@@ -23,10 +23,5 @@ if product_to_delete
   end
 
 
-# pRINT 
-# products_new = Product.where('stock_quantity != ?', 0)
-
-# products_new.each {
-#     |product|
-#     puts "Product ID: #{product.id}, Name: #{product.name}, Stock Quantity: #{product.stock_quantity}."
-# }
+all_products = Product.all
+puts "The total number of products are #{all_products.size}"
